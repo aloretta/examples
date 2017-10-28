@@ -18515,14 +18515,16 @@ TLhEREQCYMIlIiISABMuERGRAJhwiYiIBPD/xN/roDvXCEAAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Clustering-Algorithms-in-Scikit-learn">Clustering Algorithms in Scikit-learn<a class="anchor-link" href="#Clustering-Algorithms-in-Scikit-learn">&#182;</a></h3><p><table border="1"></p>
+<h3 id="Clustering-Algorithms-in-Scikit-learn">Clustering Algorithms in Scikit-learn<a class="anchor-link" href="#Clustering-Algorithms-in-Scikit-learn">&#182;</a></h3><table style="width: 90%" border="1">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 16%" >
 <col style="width: 20%" >
 <col style="width: 27%" >
 <col style="width: 22%" >
-</colgroup><thead valign="bottom">
+</colgroup>
+
+<thead valign="bottom">
 <tr>
 <th>Method name</th>
 <th>Parameters</th>
@@ -18530,66 +18532,76 @@ TLhEREQCYMIlIiISABMuERGRAJhwiYiIBPD/xN/roDvXCEAAAAAASUVORK5CYII=
 <th>Use Case</th>
 <th>Geometry (metric used)</th>
 </tr>
-</thead><p><tbody valign="top"></p>
-<p><tr></p>
-<p><td>K-Means</td></p>
-<p><td>number of clusters</td></p>
-<p><td>Very large n_samples, medium n_clusters with
-MiniBatch code</td></p>
-<p><td>General-purpose, even cluster size, flat geometry, not too many clusters</td></p>
-<p><td>Distances between points</td>&lt;/tr&gt;</p>
-<p><tr><td>Affinity propagation</td></p>
-<p><td>damping, sample preference</td></p>
-<p><td>Not scalable with n_samples</td></p>
-<p><td>Many clusters, uneven cluster size, non-flat geometry</td></p>
-<p><td>Graph distance (e.g. nearest-neighbor graph)</td>
-</tr></p>
-<p><tr><td>Mean-shift</td></p>
-<p><td>bandwidth</td></p>
-<p><td>Not scalable with n_samples</td></p>
-<p><td>Many clusters, uneven cluster size, non-flat geometry</td></p>
-<p><td>Distances between points</td>
-</tr></p>
-<p><tr><td>Spectral clustering</td></p>
-<p><td>number of clusters</td></p>
-<p><td>Medium n_samples, small n_clusters</td></p>
-<p><td>Few clusters, even cluster size, non-flat geometry</td></p>
-<p><td>Graph distance (e.g. nearest-neighbor graph)</td>
-</tr></p>
-<p><tr><td>Ward hierarchical clustering</td></p>
-<p><td>number of clusters</td></p>
-<p><td>Large n_samples and n_clusters</td></p>
-<p><td>Many clusters, possibly connectivity constraints</td></p>
-<p><td>Distances between points</td>
-</tr></p>
-<p><tr><td>Agglomerative clustering</td></p>
-<p><td>number of clusters, linkage type, distance</td></p>
-<p><td>Large n_samples and n_clusters</td></p>
-<p><td>Many clusters, possibly connectivity constraints, non Euclidean
-distances</td></p>
-<p><td>Any pairwise distance</td>
-</tr></p>
-<p><tr><td>DBSCAN</td></p>
-<p><td>neighborhood size</td></p>
-<p><td>Very large n_samples, medium n_clusters</td></p>
-<p><td>Non-flat geometry, uneven cluster sizes</td></p>
-<p><td>Distances between nearest points</td>
-</tr></p>
-<p><tr><td>Gaussian mixtures</td></p>
-<p><td>many</td></p>
-<p><td>Not scalable</td></p>
-<p><td>Flat geometry, good for density estimation</td></p>
-<p><td>Mahalanobis distances to  centers</td>
-</tr></p>
-<p><tr><td>Birch</td></p>
-<p><td>branching factor, threshold, optional global clusterer.</td></p>
-<p><td>Large n_clusters and n_samples</td></p>
-<p><td>Large dataset, outlier removal, data reduction.</td></p>
-<p><td>Euclidean distance between points</td>
+</thead>
+
+<tbody valign="top">
+<tr>
+<td>K-Means</td>
+<td>number of clusters</td>
+<td>Very large n_samples, medium n_clusters with
+MiniBatch code</td>
+<td>General-purpose, even cluster size, flat geometry, not too many clusters</td>
+<td>Distances between points</td></tr>
+<tr><td>Affinity propagation</td>
+<td>damping, sample preference</td>
+<td>Not scalable with n_samples</td>
+<td>Many clusters, uneven cluster size, non-flat geometry</td>
+<td>Graph distance (e.g. nearest-neighbor graph)</td>
+</tr>
+<tr><td>Mean-shift</td>
+<td>bandwidth</td>
+<td>Not scalable with n_samples</td>
+<td>Many clusters, uneven cluster size, non-flat geometry</td>
+<td>Distances between points</td>
+</tr>
+<tr><td>Spectral clustering</td>
+<td>number of clusters</td>
+<td>Medium n_samples, small n_clusters</td>
+<td>Few clusters, even cluster size, non-flat geometry</td>
+<td>Graph distance (e.g. nearest-neighbor graph)</td>
+</tr>
+<tr><td>Ward hierarchical clustering</td>
+<td>number of clusters</td>
+<td>Large n_samples and n_clusters</td>
+<td>Many clusters, possibly connectivity constraints</td>
+<td>Distances between points</td>
+</tr>
+<tr><td>Agglomerative clustering</td>
+<td>number of clusters, linkage type, distance</td>
+<td>Large n_samples and n_clusters</td>
+<td>Many clusters, possibly connectivity constraints, non Euclidean
+distances</td>
+<td>Any pairwise distance</td>
+</tr>
+<tr><td>DBSCAN</td>
+<td>neighborhood size</td>
+<td>Very large n_samples, medium n_clusters</td>
+<td>Non-flat geometry, uneven cluster sizes</td>
+<td>Distances between nearest points</td>
+</tr>
+<tr><td>Gaussian mixtures</td>
+<td>many</td>
+<td>Not scalable</td>
+<td>Flat geometry, good for density estimation</td>
+<td>Mahalanobis distances to  centers</td>
+</tr>
+<tr><td>Birch</td>
+<td>branching factor, threshold, optional global clusterer.</td>
+<td>Large n_clusters and n_samples</td>
+<td>Large dataset, outlier removal, data reduction.</td>
+<td>Euclidean distance between points</td>
 </tr>
 </tbody>
 </table>
-Source: <a href="http://scikit-learn.org/stable/modules/clustering.html">http://scikit-learn.org/stable/modules/clustering.html</a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Source: <a href="http://scikit-learn.org/stable/modules/clustering.html">http://scikit-learn.org/stable/modules/clustering.html</a></p>
 
 </div>
 </div>
